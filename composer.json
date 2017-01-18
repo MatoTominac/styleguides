@@ -1,0 +1,8 @@
+{
+    "config": {
+        "vendor-dir": "system/include"
+    },
+    "require": {
+        "twig/twig": "~1.0"
+    }
+}

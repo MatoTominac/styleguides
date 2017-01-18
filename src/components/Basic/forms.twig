@@ -1,0 +1,15 @@
+{#
+ # Form elements
+ #}
+
+{# Input Field #}
+{% macro input(class = "", name = "", value = "", type = "text") %}
+    <input class="{{ class }}" type="{{ type }}"{% if name %} name="{{ name }}"{% endif %}{% if value %} value="{{ value|e }}"{% endif %} />
+{% endmacro %}
+
+
+{# Button Field #}
+{% macro button(class = "", name = "", value = "", type = "text") %}
+    <button class="{{ class }}" type="{{ type }}"{% if name %} name="{{ name }}"{% endif %}{% if value %} value="{{ value|e }}"{% endif %}></button>
+{% endmacro %}
+
