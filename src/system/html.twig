@@ -3,10 +3,13 @@
     <head>
         {% block head %}
             <link rel="stylesheet" href="style.css" />
-            <title>{% block title %}{% endblock %} - Gorenje Frontend Preview</title>
+            <title>{% block title %}{% endblock %} - {{ constant('PROJECT_NAME') }} Frontend Preview</title>
         {% endblock %}
+        <style type="text/css">
+
+        </style>
     </head>
     <body>
-        <div class="styleguides_content">{% block content %}{% endblock %}</div>
+        <div class="q-preview">{% block content %}{% endblock %}</div>
     </body>
 </html>

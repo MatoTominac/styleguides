@@ -1,0 +1,14 @@
+{# include form macros because we need to put button on our product listing #}
+{% import "components/base/forms.twig" as forms %}
+{% from "components/base/forms.twig" import button as button %}
+
+{% macro productListing1(title = "Great Product", content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis elit imperdiet, luctus purus vel, dignissim massa.") %}
+  <div class="product-listing">
+    <img class="product-listing__image" src="http://placehold.it/350x200" />
+    <div class="product-listing__text-wrapper">
+      <div class="product-listing__title">{{ title }}</div>
+      <div class="product-listing__content">{{ content }}</div>
+      {{ button( "View Product", "product-listing__button" ) }}
+    </div>
+  </div>
+{% endmacro %}

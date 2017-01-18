@@ -4,6 +4,7 @@
  * Define some constants
  */
 
+define ("PROJECT_NAME", "Cool Q Project");
 define ("WORKING_FOLDER", dirname(__FILE__));
 
 
@@ -13,7 +14,7 @@ define ("WORKING_FOLDER", dirname(__FILE__));
 require_once '/system/include/autoload.php';
 $loader = new Twig_Loader_Filesystem(WORKING_FOLDER . '/src');
 $twig = new Twig_Environment($loader, array(
-  'cache' => WORKING_FOLDER . '/_cache',
+  // 'cache' => WORKING_FOLDER . '/_cache', /* include caching */
 ));
 
 

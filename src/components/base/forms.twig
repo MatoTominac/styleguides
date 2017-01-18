@@ -9,7 +9,7 @@
 
 
 {# Button Field #}
-{% macro button(class = "", name = "", value = "", type = "text") %}
+{% macro button(title = "Button Preview", class = "", name = "", value = "", type = "text") %}
     <button class="{{ class }}" type="{{ type }}"{% if name %} name="{{ name }}"{% endif %}{% if value %} value="{{ value|e }}"{% endif %}></button>
 {% endmacro %}
 
