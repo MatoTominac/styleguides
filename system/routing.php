@@ -9,5 +9,9 @@ if (isset($_GET["q"])) {
 
 /** Display default page with list of pages */
 if (!$route) {
+  /* Styleguides, this should be moved somewhere else, not here, this should be homepage */
+  $folders = scandir(WORKING_FOLDER . "/src/components");
+  /* display categories */
+
   echo $twig->render('system/homepage.twig');
 }
